@@ -8,7 +8,7 @@ const ACTIVE_FILTER = "ACTIVE_FILTER";
 
 export function getFilters() {
   return function (dispatch) {
-    return axios(`http://localhost:3001/type`).then((json) => {
+    return axios(`https://old-recipes.herokuapp.com/type`).then((json) => {
       dispatch({ type: GET_DIETS, payload: json });
     });
   };

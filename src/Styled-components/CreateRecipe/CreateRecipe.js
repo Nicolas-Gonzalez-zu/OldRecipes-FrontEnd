@@ -102,7 +102,7 @@ const CreateRecipe = withTheme(({ theme, history }) => {
             fd.append("diets", diet);
           });
           axios
-            .post("http://localhost:3001/recipe", fd)
+            .post("https://old-recipes.herokuapp.com/recipe", fd)
             .then((res) => console.log(res));
 
           history.push("/home");
